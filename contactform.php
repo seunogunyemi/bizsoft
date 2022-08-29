@@ -1,27 +1,11 @@
-<!-- <?php
-if (isset($_POST['submit']))    {
-    $name   =   $_POST['name'];
-    $subject   =   $_POST['subject'];
-    $mailFrom   =   $_POST['email'];
-    $message   =   $_POST['message'];
-
-$mailTo = "oluwaseun.ogunyemi@finpayng.com";
-$headers = "From: ".$mailFrom;
-$txt = "You have received an e-mail from ".$name.".\n\n". $message;
-
-    mail($mailTo, $subject, $txt, $headers);
-    header("Location: ContactUs.php?mailsend");
-}
-?> -->
-
 <?php
 if($_POST) {
-      $name = "";
-      $email = "";
-      $subject = "";
-      $message = "<div>";
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $subject = $_POST['subject'];
+      $message = $_POST['message'];
         
-      if(isset($_POST['visitor_name'])) {
+      if(isset($_POST['name'])) {
           $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
           $message .= "<div>
                              <label><b>Visitor Name:</b></label>&nbsp;<span>".$name."</span>
@@ -52,7 +36,7 @@ if($_POST) {
                           </div>";
       }
 
-      $message .= "</div>";
+      $message = $_POST['message'];
       $recipient = "oluwaseun.ogunyemi@finpayng.com";
       $headers  = 'MIME-Version: 1.0' . "\r\n"
       .'Content-type: text/html; charset=utf-8' . "\r\n"

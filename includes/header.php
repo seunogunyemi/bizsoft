@@ -63,6 +63,7 @@
           </div>
         </div>
       </nav>
+      @yield('body')
     <!-- navbar ends -->
     <!-- header image starts -->
     </div>

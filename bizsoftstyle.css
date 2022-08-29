@@ -324,3 +324,20 @@ select      {
               border-radius: 5px;
 }
 
+.email      {
+              background-image: url('https://images.pexels.com/photos/3850252/pexels-photo-3850252.jpeg?auto=compress&cs=tinysrgb&w=1600');
+              height: 50em;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              margin: 2em;
+              border-radius: 1em;
+}
+
+.inner      {
+              background-color: #dfecf33e;
+              text-align: center;
+              margin: auto;
+              width: fit-content;
+}
+

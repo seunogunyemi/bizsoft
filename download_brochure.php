@@ -9,7 +9,12 @@ header('Content-Disposition: attachment; filename="BIZSOFT_SOLUTION_BROCHURE_V21
 readfile('http://www.bizsoftsolutions.com/BIZSOFT_SOLUTION_BROCHURE_V21.pdf');
 ?>
 
-<?php include "index.php";?>
-<!-- <?php header ("Location: index.php", true, 301);
-exit();
-?> -->
+<?php 
+include "index.php";
+?>
+
+
+<?php 
+// header ("Location: index.php", true, 301); -->
+// exit();
+?>
